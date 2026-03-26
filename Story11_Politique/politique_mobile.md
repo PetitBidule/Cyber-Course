@@ -1,105 +1,117 @@
-# Politique Mobile
+# Politique Mobile Android
 
 ## 1. Objet
 
-Cette politique a pour objectif d’encadrer le développement, le déploiement et l’usage des applications mobiles au sein de l’organisation, afin de garantir la sécurité des données, la conformité réglementaire et la continuité des services.
+Cette politique a pour objectif d’encadrer l’usage des mobiles Android professionnels ainsi que le développement, la distribution et l’installation des applications mobiles au sein de l’organisation.
+
+Elle vise à réduire les risques liés aux applications non maîtrisées, aux fuites de données, aux malwares et aux usages non conformes.
 
 ## 2. Périmètre
 
 Cette politique s’applique :
-- à toutes les applications mobiles développées en interne ou par un prestataire ;
-- à tous les collaborateurs, prestataires et partenaires utilisant des applications mobiles professionnelles ;
-- à tous les terminaux mobiles accédant aux données ou services de l’organisation.
+- à tous les mobiles Android utilisés dans un cadre professionnel ;
+- à toutes les applications Android donnant accès aux données, outils ou services de l’organisation ;
+- à tous les collaborateurs, prestataires et partenaires autorisés à utiliser ces mobiles ou applications.
 
-## 3. Principes généraux
+## 3. Principes de sécurité
 
-Les applications mobiles doivent être conçues et utilisées selon les principes suivants :
-- sécurité dès la conception ;
-- protection des données par défaut ;
-- limitation des accès au strict nécessaire ;
-- conformité aux exigences légales, réglementaires et internes ;
-- maintien en condition de sécurité tout au long du cycle de vie.
+Les mobiles Android et les applications associées doivent respecter les principes suivants :
+- contrôle centralisé des applications autorisées ;
+- protection des données professionnelles ;
+- réduction de la surface d’attaque ;
+- traçabilité des installations et des usages ;
+- maintien en condition de sécurité.
 
-## 4. Exigences de développement
+## 4. Règles d’installation des applications
 
-### 4.1 Sécurité par conception
-Toute application mobile doit intégrer la sécurité dès les phases de conception et de développement.
+### 4.1 Source d’installation autorisée
 
-### 4.2 Gestion des données
-Les données sensibles doivent :
-- être identifiées et classifiées ;
-- être chiffrées en transit et, si nécessaire, au repos ;
-- ne pas être stockées localement sans justification métier et validation sécurité.
+L’installation d’applications Android à usage professionnel est autorisée **uniquement depuis le store d’entreprise** mis à disposition et administré par l’organisation.
 
-### 4.3 Authentification et contrôle d’accès
-Les applications doivent :
-- imposer une authentification adaptée au niveau de risque ;
-- appliquer le principe du moindre privilège ;
-- gérer correctement les sessions utilisateur ;
-- prévoir, lorsque nécessaire, une authentification forte.
+Ce store d’entreprise constitue la source de référence pour :
+- les applications internes ;
+- les applications de partenaires validées ;
+- les applications tierces approuvées par l’organisation.
 
-### 4.4 Dépendances et composants tiers
-Les bibliothèques, SDK et composants tiers doivent :
-- être approuvés ;
-- être maintenus à jour ;
-- faire l’objet d’une vérification régulière des vulnérabilités.
+### 4.2 Interdiction des installations hors store d’entreprise
 
-### 4.5 Tests de sécurité
-Avant mise en production, toute application doit faire l’objet :
-- de tests fonctionnels ;
-- de tests de sécurité adaptés ;
-- d’une correction des vulnérabilités jugées critiques ou majeures.
+Il est interdit d’installer des applications par tout autre moyen, notamment :
+- téléchargement direct de fichiers APK ;
+- installation depuis des stores publics non approuvés ;
+- sideloading via navigateur, messagerie, clé USB ou outil tiers ;
+- installation depuis une source inconnue ou non contrôlée.
 
-## 5. Exigences d’usage
+### 4.3 Désactivation des sources inconnues
 
-### 5.1 Terminaux autorisés
-Seuls les terminaux respectant les exigences de sécurité de l’organisation peuvent être utilisés pour accéder aux applications mobiles professionnelles.
+Les mobiles Android utilisés dans un cadre professionnel doivent être configurés pour empêcher l’installation d’applications depuis des sources inconnues.
 
-### 5.2 Mise à jour
-Les utilisateurs doivent maintenir :
-- le système d’exploitation à jour ;
-- les applications à jour ;
-- les mécanismes de sécurité activés sur leur terminal.
+Cette restriction doit être appliquée par les mécanismes de gestion de flotte ou de sécurité définis par l’organisation.
 
-### 5.3 Protection du terminal
-Le terminal doit être protégé par :
-- un code PIN, mot de passe ou biométrie ;
-- un verrouillage automatique ;
-- un mécanisme permettant l’effacement à distance lorsque cela est prévu.
+## 5. Validation des applications
 
-### 5.4 Usages interdits
-Il est interdit :
-- d’installer des applications non autorisées présentant un risque pour la sécurité ;
-- de contourner les mécanismes de sécurité du terminal ;
-- d’utiliser une application mobile professionnelle sur un terminal compromis.
+Toute application disponible dans le store d’entreprise doit faire l’objet d’une validation préalable portant notamment sur :
+- le besoin métier ;
+- le niveau de risque ;
+- les permissions demandées ;
+- l’origine de l’éditeur ;
+- les vulnérabilités connues ;
+- la conformité aux exigences de sécurité et de protection des données.
 
-## 6. Gestion des incidents
+L’équipe sécurité ou l’autorité désignée peut refuser, suspendre ou retirer une application présentant un risque.
 
-Tout incident de sécurité lié à une application mobile ou à un terminal mobile doit être signalé sans délai à l’équipe sécurité ou au support habilité.
+## 6. Sécurisation des mobiles Android
 
-Les incidents concernés incluent notamment :
-- perte ou vol du terminal ;
-- suspicion de compromission ;
+Les mobiles concernés doivent respecter au minimum les exigences suivantes :
+- activation d’un code PIN, mot de passe fort ou biométrie ;
+- verrouillage automatique de l’écran ;
+- chiffrement du mobile ;
+- système Android maintenu à jour ;
+- correctifs de sécurité appliqués régulièrement ;
+- possibilité d’effacement à distance lorsque cela est prévu ;
+- interdiction du root ou de toute altération des mécanismes de sécurité.
+
+Tout mobile rooté, compromis ou non conforme peut être exclu de l’accès aux ressources de l’organisation.
+
+## 7. Protection des données professionnelles
+
+Les applications Android manipulant des données professionnelles doivent :
+- limiter la collecte au strict nécessaire ;
+- chiffrer les échanges réseau ;
+- éviter le stockage local non justifié ;
+- séparer autant que possible les données personnelles et professionnelles ;
+- empêcher l’export non autorisé des données.
+
+## 8. Contrôles et non-conformité
+
+L’organisation se réserve le droit de contrôler :
+- la conformité des mobiles Android ;
+- la liste des applications installées ;
+- le respect des sources d’installation autorisées.
+
+Toute installation non autorisée, tout contournement des restrictions ou toute utilisation d’un APK hors store d’entreprise constitue une non-conformité pouvant entraîner :
+- le retrait de l’accès aux services ;
+- une mesure de remédiation technique ;
+- une escalade managériale ou disciplinaire selon les règles internes.
+
+## 9. Gestion des incidents
+
+Tout incident lié à un mobile Android ou à une application mobile doit être signalé immédiatement, notamment en cas de :
+- perte ou vol du mobile ;
+- installation suspecte ;
+- détection de malware ;
+- compromission présumée ;
 - fuite de données ;
-- comportement anormal de l’application.
-
-## 7. Rôles et responsabilités
-
-### Responsable sécurité
-- définit les exigences de sécurité ;
-- valide les règles de contrôle ;
-- pilote la gestion des risques liés au mobile.
+- comportement anormal d’une application.
+entreprise ;
+- applique les restrictions techniques sur les mobiles ;
+- gère le catalogue des applications autorisées.
 
 ### Équipes de développement
-- appliquent les exigences de sécurité ;
-- corrigent les vulnérabilités ;
-- maintiennent les applications dans le temps.
-
-### Métiers / Propriétaires d’application
-- expriment les besoins ;
-- s’assurent que l’usage de l’application est conforme à cette politique.
+- livrent des applications conformes aux exigences de sécurité ;
+- publient les versions via le canal officiel ;
+- corrigent les vulnérabilités dans les délais attendus.
 
 ### Utilisateurs
-- utilisent les applications de manière responsable ;
-- protègent leur terminal ;
-- signalent tout incident ou comportement suspect.
+- installent les applications uniquement via le store d’entreprise ;
+- ne contournent pas les restrictions de sécurité ;
+- signalent sans délai toute anomalie, perte ou suspicion de compromission.
